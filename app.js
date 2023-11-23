@@ -4,6 +4,14 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
+app.get('/info', function (req, res) {   // Routing to  / 
+  res.send('Hello World from info '); })
+
+app.get('/data', function (req, res) {   // Routing to  /data 
+  res.send('Hello World from data'); })
+  //   usw.    …    
+
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
