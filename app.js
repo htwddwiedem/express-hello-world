@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {   // Routing to  / 
-   res.send('Hello World from root at group G00 '); })
+   res.send('Hello World from root at group G00 ################ '); })
 
 app.get('/data', function (req, res) {   // Routing to  /data 
    res.send('Hello World from data'); })
@@ -11,7 +11,7 @@ app.get('/info', function (req, res) {   // Routing to  /data
    res.send('Hello from Group  G00 !'); })
    
       
-   //   usw.    …    
+   //   usw.    ï¿½    
 app.use(function(request, response) {  // Fehlerbehandlung 
 response.status(404).send("Seite nicht gefunden!");
 }); 
